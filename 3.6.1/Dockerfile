@@ -104,20 +104,20 @@ RUN apk add --update \
     && make -j "$(nproc)" \
     && make install \
 
-    # && runDeps="$( \
-    #   scanelf --needed --nobanner --recursive $PREFIX_DIR \
-    #     | awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' \
-    #     | sort -u \
-    #     | xargs -r apk info --installed \
-    #     | sort -u \
-    # )" \
-    # && apk add --virtual .python-rundeps $runDeps \
-    # && find $PREFIX_DIR -depth \
-    #     \( \
-    #       \( -type d -a -name test -o -name tests \) \
-    #       -o \
-    #       \( -type f -a -name '*.pyc' -o -name '*.pyo' \) \
-    #     \) -exec rm -rf '{}' + \
+    && runDeps="$( \
+      scanelf --needed --nobanner --recursive $PREFIX_DIR \
+        | awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' \
+        | sort -u \
+        | xargs -r apk info --installed \
+        | sort -u \
+    )" \
+    && apk add --virtual .python-rundeps $runDeps \
+    && find $PREFIX_DIR -depth \
+        \( \
+          \( -type d -a -name test -o -name tests \) \
+          -o \
+          \( -type f -a -name '*.pyc' -o -name '*.pyo' \) \
+        \) -exec rm -rf '{}' + \
 
     # make some useful symlinks that are expected to exist
     && cd $PREFIX_DIR/bin \
