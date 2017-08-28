@@ -5,7 +5,7 @@ Docker Image Name
 
 |Build Status| |Docker Stars| |Docker Pulls| |Code Climate| |GitHub stars| |Issue Count| |license| |Test Coverage|
 
-:Version: 0.0.0
+:Version: 0.0.1
 :Web: https://github.com/luismayta/docker-alpine-python
 :Download: https://github.com/luismayta/docker-alpine-python
 :Source: https://github.com/luismayta/docker-alpine-python
