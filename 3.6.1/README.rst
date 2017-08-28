@@ -1,7 +1,7 @@
 luismayta/alpine-python:3.6.1
 =============================
 
-|Build Status| |GitHub issues| |GitHub license|
+|Build Status|
 
 Requirements
 ------------
@@ -28,9 +28,6 @@ at runtime using -e KEY=value. For example, to change the default
 environment you can issue
 ``docker run -P --name alpine-python -e ENV=dev luismayta/alpine-python:3.6.1``
 
+.. CI Github
 .. |Build Status| image:: https://travis-ci.org/luismayta/docker-alpine-python.svg
    :target: https://travis-ci.org/luismayta/docker-alpine-python
-.. |GitHub issues| image:: https://img.shields.io/github/issues/luismayta/docker-alpine-python.svg
-   :target: https://github.com/luismayta/docker-alpine-python/issues
-.. |GitHub license| image:: https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square
-   :target: LICENSE

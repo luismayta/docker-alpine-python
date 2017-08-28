@@ -1,5 +1,5 @@
-docker-alpine-python
-====================
+alpine-python
+=============
 
 Docker Image Name
 
@@ -9,7 +9,7 @@ Docker Image Name
 :Web: https://github.com/luismayta/docker-alpine-python
 :Download: https://github.com/luismayta/docker-alpine-python
 :Source: https://github.com/luismayta/docker-alpine-python
-:Keywords: docker-alpine-python
+:Keywords: docker, alpine, python
 
 Download size of this image is only:
 
@@ -84,12 +84,14 @@ Made with :heart: :coffee: and :pizza: by `hadenlabs <https://github.com/hadenla
 .. |Test Coverage| image:: https://codeclimate.com/github/luismayta/docker-alpine-python/badges/coverage.svg
    :target: https://codeclimate.com/github/luismayta/docker-alpine-python/coverage
 
-.. |MicroBadger| image:: https://images.microbadger.com/badges/image/luismayta/docker-alpine-python.svg
-   :target: http://microbadger.com/images/luismayta/docker-alpine-python
-.. |Docker Stars| image:: https://img.shields.io/docker/stars/luismayta/docker-alpine-python.svg?style=flat-square
-   :target: https://hub.docker.com/r/luismayta/docker-alpine-python
-.. |Docker Pulls| image:: https://img.shields.io/docker/pulls/luismayta/docker-alpine-python.svg?style=flat-square
-   :target: https://hub.docker.com/r/luismayta/docker-alpine-python
+.. Badges for images hub docker
+.. |MicroBadger| image:: https://images.microbadger.com/badges/image/luismayta/alpine-python.svg
+   :target: http://microbadger.com/images/luismayta/alpine-python
+.. |Docker Stars| image:: https://img.shields.io/docker/stars/luismayta/alpine-python.svg?style=flat-square
+   :target: https://hub.docker.com/r/luismayta/alpine-python
+.. |Docker Pulls| image:: https://img.shields.io/docker/pulls/luismayta/alpine-python.svg?style=flat-square
+   :target: https://hub.docker.com/r/luismayta/alpine-python
 
+.. Badges CI
 .. |Build Status| image:: https://travis-ci.org/luismayta/docker-alpine-python.svg
    :target: https://travis-ci.org/luismayta/docker-alpine-python
